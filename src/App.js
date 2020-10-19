@@ -1,26 +1,43 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import $ from 'jquery'
+import { Button, Container, Col, Row, Form } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Header_V } from './components/header.js'
+import { Nav_V } from './components/navigation.js'
+import { About_V } from './components/about';
+import './components/scroll.js'
+
+
 
 function App() {
+
+
+  
   return (
+    
     <div className="App">
+
+
+      <Nav_V />
+     
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
+
+        
+        <Header_V />
+     
       </header>
+      
+      <About_V />
     </div>
   );
+
+  
 }
 
 export default App;
+
+
+
